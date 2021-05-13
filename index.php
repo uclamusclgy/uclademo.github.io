@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>UCLA Music Studies</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="main.css" />
+<?php include("./header.php") ?>
 
     <script>
       var slideIndex = 0;
@@ -31,24 +25,6 @@
       }
     </script>
   </head>
-
-  <body>
-    <div class="navbar" id="myTopnav">
-      <div class="navbar-centered">
-        <a href="index.html"><h1>UCLA Undergraduate Music Studies</h1></a>
-      </div>
-      <a href="journal.html"><h2>Journal</h2></a>
-      <a href="podcast.html"><h2>Podcast</h2></a>
-      <a href="club.html"><h2>Club</h2></a>
-      <div class="navbar-right">
-        <a href="about.html"><h2>About</h2></a>
-        <a href="people.html"><h2>People</h2></a>
-        <a href="contact.html"><h2>Contact</h2></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </div>
 
     <div class="flex-container">
       <div class="welcome"><img src="ebtm-square.png" /></div>
