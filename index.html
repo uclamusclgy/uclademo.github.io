@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UCLA Music Studies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+</head>
+	
+<body>
+
+<div class="navbar" id="myTopnav">
+	
+	<div class="navbar-centered">
+		<a href="index.html"><h1>UCLA Undergraduate Music Studies</h1></a>
+	</div>
+		<a href="journal.html"><h2>Journal</h2></a>
+		<a href="podcast.html"><h2>Podcast</h2></a>
+		<a href="club.html"><h2>Club</h2></a>
+	<div class="navbar-right">
+		<a href="about.html"><h2>About</h2></a>
+		<a href="people.html"><h2>People</h2></a>
+		<a href="contact.html"><h2>Contact</h2></a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+</div>
+	
+<div class="flex-container">
+	<div class="welcome"><img src="ebtm-square.png"></div>
+	<div><p>Welcome to the UCLA Department of Musicology's undergraduate music studies group!</p></div>
+</div>
+	
+<div class="container"></div>
+<div class="footer">
+	<h6>MUSE | © 2021 by UCLA Musicology Department. Individual articles are the copyright of their authors. | uclamusejournal@gmail.com</h6>
+  <div class="footer-right">
+	  <h6><a href="https://www.instagram.com/uclamusicstudies/"><img class="social" src="iglyph.png"></a></h6>
+	  <h6><a href="https://www.facebook.com/uclamusicstudies/"><img class="social" src="fglyph.png"></a></h6>
+	  <h6><a href="https://open.spotify.com/user/onh9otqhp57vzp7391raxhdpk?si=263c5a46cce74f95"><img class="social" src="sglyph.png"></a></h6>
+  </div>
+</div>
+	
+</body>
+</html>
