@@ -1,129 +1,119 @@
 @charset "UTF-8";
 /* CSS Document */
 
-:root {
-  --darkBlue: #2774ae;
-}
-
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro",
-    "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-  font-style: normal;
-  font-weight: 200;
-  margin: auto;
-  background-color: #daebfe;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-style: normal;
+	font-weight: 200;
+	margin: auto;
+	background-color: #DAEBFE;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 a {
-  color: #003b5c;
-  transition: 0.3s;
+	color: #003B5C;
+	transition: 0.3s;
 }
 
 a:hover {
-  color: #ffd100;
-  transition: 0.3s;
+	color: #FFD100;
+	transition: 0.3s;
 }
 
 h1 {
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro",
-    "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-  font-size: 3.2vh;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 3.2vh;
 }
 
 h2 {
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro",
-    "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-  font-size: 2.5vh;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 2.5vh;
+	;
 }
 
 h3 {
-  color: #003b5c;
-  text-align: center;
-  font-size: 2.5vh;
+	color: #003B5C;
+	text-align: center;
+	font-size: 2.5vh;
 }
 
 h4 {
-  color: #003b5c;
-  text-align: center;
-  font-size: 2.25vh;
+	color: #003B5C;
+	text-align: center;
+	font-size: 2.25vh;
 }
 
 h5 {
-  color: #003b5c;
-  font-size: 2.38vh;
+	color: #003B5C;
+	font-size: 2.38vh;
 }
 
 h6 {
-  font-weight: normal;
-  color: #003b5c;
-  font-size: 2vh;
+	font-weight:normal;
+	color: #003B5C;
+	font-size: 2vh;
 }
 
 h7 {
-  font-weight: normal;
-  color: #003b5c;
-  font-size: 2vh;
+	font-weight:normal;
+	color: #003B5C;
+	font-size: 2vh;
 }
 
 p {
-  color: #003b5c;
-  padding: 1vw 5vw;
-  font-size: 2.38vh;
+	color: #003B5C;
+	padding: 1vw 5vw;
+	font-size: 2.38vh;
 }
 
 .navbar {
-  background-color: var(--darkBlue);
-  padding: 10px 30px !important;
+	overflow: hidden;
+	position: relative;
+	padding: 1vw;
+	background-color: #2774AE;
 }
-
-.navbar-brand {
-  padding-right: 15px;
-  font-size: 3rem !important;
-}
-/* 
 
 .navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0vw 1vw;
-  text-decoration: none;
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0vw 1vw;
+	text-decoration: none;
 }
 
 .navbar a:hover {
-  color: #ffd100;
-  transition: 0.3s;
-  text-decoration: underline;
+	color: #FFD100;
+	transition: 0.3s;
+	text-decoration: underline;
 }
 
 .navbar-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-bottom: 0.1vw solid transparent;
+	float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-bottom: .1vw solid transparent;
 }
 
 .navbar-centered a:hover {
-  color: #ffd100;
+	color: #FFD100;
 }
 
 .navbar-right {
-  float: right;
+	float: right;
 }
 
 .navbar .icon {
   display: none;
-} */
+}
 
 /*@media screen and (max-width: 500px) {
   .navbar a:not(:first-child) {display: none;}
@@ -149,12 +139,11 @@ p {
 } */
 
 @media screen and (max-width: 600px) {
-  .navbar a,
-  .navbar-right {
+  .navbar a, .navbar-right {
     float: none;
     display: block;
   }
-
+  
   .navbar-centered a {
     position: relative;
     top: 0;
@@ -170,117 +159,117 @@ p {
 }
 
 .flex-container {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  text-justify: center;
-  padding: 2vw;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	text-justify: center;
+	padding: 2vw;
 }
 
 .description {
-  flex: 60%;
-  width: 50%;
+	flex: 60%;
+	width: 50%;
 }
 
 .content {
-  flex: 40%;
+	flex: 40%;
 }
 
 .current {
-  max-width: 32vw;
-  justify-content: center;
-  align-items: center;
+	max-width: 32vw;
+	justify-content: center;
+	align-items: center;
 }
 
 .issue {
-  max-width: 30%;
-  justify-content: center;
-  align-items: center;
-  padding: 1vw 5vw;
+	max-width: 30%;
+	justify-content: center;
+	align-items: center;
+	padding: 1vw 5vw;
 }
 
 .cover {
-  max-width: 15vw;
-}
+	max-width: 15vw;
+	}
 
 .bio {
-  max-width: 30%;
-  padding: 2vw;
-  border: 1px solid #8099bd;
-  margin: 1vw;
+	max-width: 30%;
+	padding: 2vw;
+	border: 1px solid #8099bd;
+	margin: 1vw;
 }
 
 .spotify {
-  width: 100%;
-  padding: 0vw 3vw;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	padding: 0vw 3vw;
+	justify-content: center;
+	align-items: center;
 }
 
 .welcome img {
-  max-width: 40%;
-  padding: 2vw;
+	max-width: 40%;
+	padding: 2vw;
 }
 
 hr {
-  width: 80%;
-  justify-content: space-around;
-  text-align: center;
+	width:80%;
+	justify-content: space-around;
+	text-align: center;
 }
 
 ul {
-  padding: 0vw 4vw 0vw;
+	padding: 0vw 4vw 0vw;
 }
 
 ul.center {
-  text-align: center;
-  justify-content: center;
+	text-align: center;
+	justify-content: center;
 }
 
 li {
-  list-style-type: none;
-  color: #003b5c;
-  padding: 0.25vw 2vw;
-  font-size: 2.38vh;
+	list-style-type: none;
+	color: #003B5C;
+	padding: .25vw 2vw;
+	font-size: 2.38vh;
 }
 
 li.a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 li.a:hover {
-  color: #ffd100;
+  color: #FFD100;
 }
 
 .tab {
-  flex: wrap row;
-  overflow: hidden;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  padding: 0vw 1.25vw 2vw;
+	flex: wrap row;
+	overflow: hidden;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	padding: 0vw 1.25vw 2vw;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  background-color: inherit;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 1vw 1.25vw;
-  transition: 0.3s;
-  justify-content: center;
-  text-align: center;
-  overflow: auto;
-  width: 10%;
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 1vw 1.25vw;
+	transition: 0.3s;
+	justify-content: center;
+	text-align: center;
+	overflow: auto;
+	width: 10%;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ffd100;
-  text-color: #ffd100;
+  background-color: #FFD100;
+	text-color: #FFD100;
 }
 
 /* Create an active/current tablink class */
@@ -291,27 +280,25 @@ li.a:hover {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 0.5vw 12vw;
+  padding: .5vw 12vw;
   border-top: none;
 }
 
-input[type="text"],
-select,
-textarea {
-  width: 100%; /* Full width */
-  background-color: #daebfe;
-  padding: 1vw; /* Some padding */
-  border: 1px solid #003b5c; /* Gray border */
-  border-radius: 0.25vw; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	background-color: #DAEBFE;
+	padding: 1vw; /* Some padding */
+	border: 1px solid #003B5C; /* Gray border */
+	border-radius: .25vw; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #003b5c;
+input[type=submit] {
+  background-color: #003B5C;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -320,8 +307,8 @@ input[type="submit"] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #ffd100;
+input[type=submit]:hover {
+  background-color: #FFD100;
 }
 
 /* Add a background color and some padding around the form */
@@ -336,50 +323,50 @@ input[type="submit"]:hover {
 }
 
 .container {
-  flex: 1; /* same as flex-grow: 1; */
+    flex: 1;    /* same as flex-grow: 1; */
 }
 
 .footer {
-  background-color: #2774ae;
-  overflow: hidden;
-  padding: 0vw 8vw;
-  display: flex;
+    background-color: #2774AE;
+    overflow: hidden;
+	padding: 0vw 8vw;
+	display: flex;
 }
 
 /* Style the links inside the navigation bar */
 .footer h6 {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 0vw 2vw;
-  text-decoration: none;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 0vw 2vw;
+	text-decoration: none;
 }
 
 .footer a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  justify-content: center;
-  text-decoration: none;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	justify-content: center;
+	text-decoration: none;
 }
 
 .footer-right {
-  float: right;
-  justify-content: center;
-  text-align: center;
-  padding: 0vw;
+	float: right;
+	justify-content: center;
+	text-align: center;
+	padding: 0vw;
 }
 
 .social {
-  max-width: 1.5vw;
-  justify-content: center;
-  align-items: center;
+	max-width: 1.5vw;
+	justify-content: center;
+	align-items: center;
 }
 
 @media screen and (max-width: 600px) {
   .footer {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+	  flex-direction: column;
+	  justify-content: center;
+	  text-align: center;
   }
 }
