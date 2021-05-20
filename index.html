@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <title>UCLA Music Studies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,25 +31,16 @@
         setTimeout(showSlides, 4000); // Change image every 2 seconds
       }
     </script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
 
   <body>
-    <div class="navbar" id="myTopnav">
-      <div class="navbar-centered">
-        <a href="index.html"><h1>UCLA Undergraduate Music Studies</h1></a>
-      </div>
-      <a href="journal.html"><h2>Journal</h2></a>
-      <a href="podcast.html"><h2>Podcast</h2></a>
-      <a href="club.html"><h2>Club</h2></a>
-      <div class="navbar-right">
-        <a href="about.html"><h2>About</h2></a>
-        <a href="people.html"><h2>People</h2></a>
-        <a href="contact.html"><h2>Contact</h2></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </div>
+    <div id="header"></div>
 
     <div class="flex-container">
       <div class="welcome"><img src="ebtm-square.png" /></div>
@@ -61,29 +53,7 @@
     </div>
 
     <div class="container"></div>
-    <div class="footer">
-      <h6>
-        MUSE | © 2021 by UCLA Musicology Department. Individual articles are the
-        copyright of their authors. | uclamusejournal@gmail.com
-      </h6>
-      <div class="footer-right">
-        <h6>
-          <a href="https://www.instagram.com/uclamusicstudies/"
-            ><img class="social" src="iglyph.png"
-          /></a>
-        </h6>
-        <h6>
-          <a href="https://www.facebook.com/uclamusicstudies/"
-            ><img class="social" src="fglyph.png"
-          /></a>
-        </h6>
-        <h6>
-          <a
-            href="https://open.spotify.com/user/onh9otqhp57vzp7391raxhdpk?si=263c5a46cce74f95"
-            ><img class="social" src="sglyph.png"
-          /></a>
-        </h6>
-      </div>
-    </div>
+
+    <div id="footer"></div>
   </body>
 </html>
