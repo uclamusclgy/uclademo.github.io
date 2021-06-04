@@ -126,15 +126,23 @@ p {
 }
 
 .bio {
-  max-width: 30%;
-  padding: 2vw;
-  border: 1px solid #8099bd;
-  margin: 1vw;
+	max-width: 30%;
+	padding: 2vw;
+	border: 1px solid #8099bd;
+	margin: 1vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.bio img {
+	max-width: 15vw;
+	padding: 0vw 0vw 1vw 0vw;
+	justify-content: center;
+  	align-items: center;
 }
 
 .spotify {
   width: 100%;
-
   max-width: 70rem;
   margin: auto;
 }
